@@ -3,6 +3,11 @@
 // Ctil + F = 검색해서 위치 찾기
 // Ctrl + B = 변수가 사용되는 것 찾기 <-> 반대로도 찾기
 // Ctrl + E = 최근에 사용한 명령어등
+//
+// Ctil + alt + \ = hot reload
+// Ctil + alt + shift + \ = hot restart
+
+
 import 'package:flutter/material.dart';
 
 // Camel Case (낙타형) - 클래스는 무조건 (단어마다 맨 앞자만 대문자)
