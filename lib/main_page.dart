@@ -20,13 +20,14 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   //변수는 항상 소문자로 시작
-  int number = 0;
-  String _text = '';
-  final _textController = TextEditingController();
+  //변수 어디서나 변경가능
+  int number = 0;//변수
+  String _text = '';//변수
+  final _textController = TextEditingController();//상수 더이상 변경이 불가능한 값 / 인스턴스 생성
 
   @override
-  void dispose() {
-    _textController.dispose();
+  void dispose() {//화면이 닫힐때 or 더이상 사용이 안될때 호출
+    _textController.dispose();//메모리 해제
     super.dispose();
   }
 
