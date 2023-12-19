@@ -6,7 +6,7 @@
 //
 // Ctil + alt + \ = hot reload
 // Ctil + alt + shift + \ = hot restart
-
+//inspector 정보를 통해 앱내 위젯 설정등을 볼수 있다
 import 'package:flutter/material.dart';
 
 // Camel Case (낙타형) - 클래스는 무조건 (단어마다 맨 앞자만 대문자)
