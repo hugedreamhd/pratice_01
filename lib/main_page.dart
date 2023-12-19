@@ -61,7 +61,7 @@ class _MainPageState extends State<MainPage> {
             ),
             TextField(
               decoration: InputDecoration(
-                labelText: '글자',
+                labelText: '글자',//여기
                 border: OutlineInputBorder(),
               ),
               onChanged: (text){
