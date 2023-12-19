@@ -33,6 +33,11 @@ class _MainPageState extends State<MainPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              color: Colors.red,
+              width: 100,
+              height: 100,
+            ),
             Text(
               '$number',
               style: TextStyle(
@@ -72,6 +77,18 @@ class _MainPageState extends State<MainPage> {
               width: 200,
               height: 100,
               fit: BoxFit.fill,
+            ),
+            Container(
+              color: Colors.red,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
+                    'assets/img/cat.jpg',
+                  width: 200,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
           ],
         ),
