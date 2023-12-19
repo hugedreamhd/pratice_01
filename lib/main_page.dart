@@ -21,7 +21,14 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   //변수는 항상 소문자로 시작
   int number = 0;
+  String _text = '';
+  final _textController = TextEditingController();
 
+  @override
+  void dispose() {
+    _textController.dispose();
+    super.dispose();
+  }
   @override
   //메서드도 항상 소문자로 시작
   Widget build(BuildContext context) {
@@ -71,11 +78,13 @@ class _MainPageState extends State<MainPage> {
                   Expanded(
                     flex: 3,
                     child: TextField(
+                      controller: _textController,
                       decoration: InputDecoration(
                         labelText: '글자', //여기
                         border: OutlineInputBorder(),
                       ),
                       onChanged: (text) {
+                        _text = text;
                         print(text);
                       },
                     ),
@@ -83,7 +92,9 @@ class _MainPageState extends State<MainPage> {
                   Expanded(
                     flex: 2,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        print(_textController.text);
+                      },
                       child: Text('Text'),
                     ),
                   ),
