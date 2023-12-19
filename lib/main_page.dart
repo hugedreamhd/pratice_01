@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 
 // Camel Case (낙타형) - 클래스는 무조건 (단어마다 맨 앞자만 대문자)
 // snake_case (뱀형) - 파일 이름은 암묵적인 소문자
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MainPageState extends State<MainPage> {
   //변수는 항상 소문자로 시작
-  int count = 0;
+  int number = 0;
 
   @override
   //메서드도 항상 소문자로 시작
@@ -27,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '$count',
+              '$number',
               style: TextStyle(
                 color: Colors.red,
                 fontSize: 70,
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () {
           //화면 갱신
           setState(() {
-            count++;
+            number++;
           });
         },
         child: Icon(Icons.add),
