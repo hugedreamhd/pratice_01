@@ -1,3 +1,4 @@
+//import 다른 파일에 있는 내용을 자동으로 인식해서 사용할 수 있게 하는것
 import 'package:flutter/material.dart';
 import 'package:pratice_01/main_page.dart';
 
