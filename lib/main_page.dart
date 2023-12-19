@@ -29,6 +29,7 @@ class _MainPageState extends State<MainPage> {
     _textController.dispose();
     super.dispose();
   }
+
   @override
   //메서드도 항상 소문자로 시작
   Widget build(BuildContext context) {
@@ -94,12 +95,16 @@ class _MainPageState extends State<MainPage> {
                     child: ElevatedButton(
                       onPressed: () {
                         print(_textController.text);
+
+                        //화면 갱신
+                        setState(() {});
                       },
-                      child: Text('Text'),
+                      child: Text('login'),
                     ),
                   ),
                 ],
               ),
+              Text(_textController.text),
               Image.network(
                 'https://previews.123rf.com/images/sternfahrer/sternfahrer2304/sternfahrer230400828/202544978-%EB%A9%8B%EC%A7%84-%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4%EC%97%90%EC%84%9C-%EC%98%81%EA%B0%90%EC%9D%84-%EB%B0%9B%EC%9D%80-%EB%B8%94%EB%9E%99%ED%99%80-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%85%98-%ED%8C%90%ED%83%80%EC%A7%80-%EC%8A%A4%ED%83%80%EC%9D%BC-ai-%EC%83%9D%EC%84%B1.jpg',
                 width: 200,
