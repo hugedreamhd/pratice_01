@@ -39,12 +39,33 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('홈'),
       ),
       body: Center(
-        child: Text(
-          '$count',
-          style: TextStyle(
-            color: Colors.red,
-            fontSize: 70,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              '$count',
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 70,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                print('ElevatedButton');
+              },
+              child: Text('ElevatedButton'),
+            ),
+            OutlinedButton(
+              onPressed: () {
+                print('OutlinedButton');
+              },
+              child: Text('OutlinedButton'),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text('TextButton'),
+            ),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
