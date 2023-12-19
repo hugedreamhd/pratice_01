@@ -59,6 +59,15 @@ class _MainPageState extends State<MainPage> {
               },
               child: Text('TextButton'),
             ),
+            TextField(
+              decoration: InputDecoration(
+                labelText: '글자',
+                border: OutlineInputBorder(),
+              ),
+              onChanged: (text){
+                print(text);
+              },
+            ),
           ],
         ),
       ),
